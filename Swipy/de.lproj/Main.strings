@@ -1,0 +1,282 @@
+
+/* Class = "UIButton"; normalTitle = "◀︎ Back"; ObjectID = "0PQ-JA-772"; */
+"0PQ-JA-772.normalTitle" = "◀︎ Back";
+
+/* Class = "UILabel"; text = "Wishlist"; ObjectID = "1va-zP-Gwn"; */
+"1va-zP-Gwn.text" = "Wishlist";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "20K-5R-L4U"; */
+"20K-5R-L4U.text" = "Label";
+
+/* Class = "UILabel"; text = "✓"; ObjectID = "3vS-d0-MNg"; */
+"3vS-d0-MNg.text" = "✓";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "4f1-i0-Na0"; */
+"4f1-i0-Na0.text" = "Label";
+
+/* Class = "UILabel"; text = "✓"; ObjectID = "4lO-xp-OTw"; */
+"4lO-xp-OTw.text" = "✓";
+
+/* Class = "UIButton"; normalTitle = "Apply"; ObjectID = "5Vw-c1-oWR"; */
+"5Vw-c1-oWR.normalTitle" = "Anwenden";
+
+/* Class = "UIButton"; normalTitle = "How it works"; ObjectID = "5cF-2k-9fe"; */
+"5cF-2k-9fe.normalTitle" = "How it works";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "5f8-UB-dDn"; */
+"5f8-UB-dDn.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Filter"; ObjectID = "5hb-SJ-esW"; */
+"5hb-SJ-esW.title" = "Filter";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "5jT-a9-FIk"; */
+"5jT-a9-FIk.title" = "Back";
+
+/* Class = "UILabel"; text = "Top Marken"; ObjectID = "5pZ-4i-s04"; */
+"5pZ-4i-s04.text" = "Top Marken";
+
+/* Class = "UILabel"; text = "✓"; ObjectID = "6Tu-Vz-Zte"; */
+"6Tu-Vz-Zte.text" = "✓";
+
+/* Class = "UIButton"; normalTitle = "◀︎ Back"; ObjectID = "6Uw-la-586"; */
+"6Uw-la-586.normalTitle" = "◀︎ Back";
+
+/* Class = "UIButton"; normalTitle = "BUY"; ObjectID = "7NF-ek-gxo"; */
+"7NF-ek-gxo.normalTitle" = "Zum Shop";
+
+/* Class = "UILabel"; text = "Infobutton"; ObjectID = "ASq-dl-qZD"; */
+"ASq-dl-qZD.text" = "Infobutton";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Awu-Yx-Hu4"; */
+"Awu-Yx-Hu4.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Personal Style-Filter"; ObjectID = "B0a-jW-Bym"; */
+"B0a-jW-Bym.text" = "Persönlicher Style-Filter";
+
+/* Class = "UILabel"; text = "Versanddauer: 1 bis 3 Werktage"; ObjectID = "BIe-e9-R3q"; */
+"BIe-e9-R3q.text" = "Versanddauer: 1 bis 3 Werktage";
+
+/* Class = "UILabel"; text = "bis"; ObjectID = "BJA-BS-3Kk"; */
+"BJA-BS-3Kk.text" = "bis";
+
+/* Class = "UILabel"; text = "Klicke auf den Infobutton für weitere Bilder, verfügbare Größen & Lieferzeiten"; ObjectID = "BaJ-Zl-7aF"; */
+"BaJ-Zl-7aF.text" = "Klicke auf den Infobutton für weitere Bilder, verfügbare Größen & Lieferzeiten";
+
+/* Class = "UILabel"; text = "Wischen um Angebote zu liken oder zu disliken"; ObjectID = "C4q-wu-tZf"; */
+"C4q-wu-tZf.text" = "Wischen um Angebote zu liken oder zu disliken";
+
+/* Class = "UIButton"; normalTitle = "Wishlist per E-Mail senden"; ObjectID = "CD5-UG-EUu"; */
+"CD5-UG-EUu.normalTitle" = "Wishlist per E-Mail senden";
+
+/* Class = "UIButton"; normalTitle = "Apply"; ObjectID = "DbI-db-Dfq"; */
+"DbI-db-Dfq.normalTitle" = "Anwenden";
+
+/* Class = "UIButton"; normalTitle = "Apply"; ObjectID = "DhB-c8-Ktm"; */
+"DhB-c8-Ktm.normalTitle" = "Anwenden";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Emj-Dh-S8V"; */
+"Emj-Dh-S8V.text" = "Label";
+
+/* Class = "UILabel"; text = "- 50 %"; ObjectID = "FIG-no-PkC"; */
+"FIG-no-PkC.text" = "- 50 %";
+
+/* Class = "UIBarButtonItem"; title = "Back to Swipy"; ObjectID = "Fzv-zb-nG9"; */
+"Fzv-zb-nG9.title" = "Zurück zu Swipy";
+
+/* Class = "UILabel"; text = "Follow us!"; ObjectID = "GVl-jv-6Uw"; */
+"GVl-jv-6Uw.text" = "Follow us!";
+
+/* Class = "UIButton"; normalTitle = "◀︎ Back"; ObjectID = "Goe-wN-PCt"; */
+"Goe-wN-PCt.normalTitle" = "◀︎ Back";
+
+/* Class = "UILabel"; text = "✓"; ObjectID = "GzB-fL-gNA"; */
+"GzB-fL-gNA.text" = "✓";
+
+/* Class = "UILabel"; text = "‣"; ObjectID = "H22-jG-rWZ"; */
+"H22-jG-rWZ.text" = "‣";
+
+/* Class = "UIButton"; normalTitle = "Apply"; ObjectID = "JDI-76-CbN"; */
+"JDI-76-CbN.normalTitle" = "Anwenden";
+
+/* Class = "UILabel"; text = "‣"; ObjectID = "KeG-jj-OJB"; */
+"KeG-jj-OJB.text" = "‣";
+
+/* Class = "UILabel"; text = "✓"; ObjectID = "ML6-bJ-jAm"; */
+"ML6-bJ-jAm.text" = "✓";
+
+/* Class = "UIButton"; normalTitle = "◀︎ Back"; ObjectID = "Mq4-jQ-Ey0"; */
+"Mq4-jQ-Ey0.normalTitle" = "◀︎ Back";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Msd-cg-tAW"; */
+"Msd-cg-tAW.text" = "Label";
+
+/* Class = "UILabel"; text = "Tipp: Sende die Wishlist an Deine eigene E-Mail Adresse. So kannst Du Dir Deine Lieblings-Styles bequem am PC oder Laptop anschauen oder direkt bestellen."; ObjectID = "OrX-uA-ZCg"; */
+"OrX-uA-ZCg.text" = "Tipp: Sende die Wishlist an Deine eigene E-Mail Adresse. So kannst Du Dir Deine Lieblings-Styles bequem am PC oder Laptop anschauen oder direkt bestellen.";
+
+/* Class = "UIBarButtonItem"; title = ">"; ObjectID = "Oxa-wc-23b"; */
+"Oxa-wc-23b.title" = ">";
+
+/* Class = "UIBarButtonItem"; title = "<"; ObjectID = "RMt-Rq-wSm"; */
+"RMt-Rq-wSm.title" = "<";
+
+/* Class = "UIButton"; normalTitle = "◀︎ Back"; ObjectID = "Rbd-yU-Xqt"; */
+"Rbd-yU-Xqt.normalTitle" = "◀︎ Back";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "S2Z-wA-c0s"; */
+"S2Z-wA-c0s.text" = "Label";
+
+/* Class = "UILabel"; text = "Größen: 36|38|39|40"; ObjectID = "S5H-tw-j3n"; */
+"S5H-tw-j3n.text" = "Größen: 36|38|39|40";
+
+/* Class = "UILabel"; text = "Filter"; ObjectID = "Sgu-RT-qTX"; */
+"Sgu-RT-qTX.text" = "Filter";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "T7a-Ws-8Fr"; */
+"T7a-Ws-8Fr.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "◀︎ Back"; ObjectID = "Uez-Jm-qVl"; */
+"Uez-Jm-qVl.normalTitle" = "◀︎ Back";
+
+/* Class = "UIButton"; normalTitle = "Apply"; ObjectID = "VZw-dM-oPr"; */
+"VZw-dM-oPr.normalTitle" = "Anwenden";
+
+/* Class = "UILabel"; text = "Bitte gebe für die Suche mindestens 3 Buchstaben ein!"; ObjectID = "XBB-m0-rYW"; */
+"XBB-m0-rYW.text" = "Bitte gebe für die Suche mindestens 3 Buchstaben ein!";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "XUL-tE-EBf"; */
+"XUL-tE-EBf.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Y7w-nZ-0L9"; */
+"Y7w-nZ-0L9.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "YHz-4e-Zoe"; */
+"YHz-4e-Zoe.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Apply"; ObjectID = "Z3b-C5-xoT"; */
+"Z3b-C5-xoT.normalTitle" = "Anwenden";
+
+/* Class = "UIButton"; normalTitle = "Apply"; ObjectID = "ZFD-ce-asY"; */
+"ZFD-ce-asY.normalTitle" = "Anwenden";
+
+/* Class = "UIButton"; normalTitle = "Wishlist löschen"; ObjectID = "ZiF-v3-3OL"; */
+"ZiF-v3-3OL.normalTitle" = "Wishlist löschen";
+
+/* Class = "UILabel"; text = "225"; ObjectID = "a7l-4A-iBj"; */
+"a7l-4A-iBj.text" = "225";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "b5t-bd-fOP"; */
+"b5t-bd-fOP.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Marke suchen (z.B. Moschino)"; ObjectID = "bI2-2R-IVD"; */
+"bI2-2R-IVD.placeholder" = "Marke suchen (z.B. Moschino)";
+
+/* Class = "UIButton"; normalTitle = "Close"; ObjectID = "bZn-6z-T2b"; */
+"bZn-6z-T2b.normalTitle" = "Schließen";
+
+/* Class = "UISegmentedControl"; cLR-MH-2mC.segmentTitles[0] = "Women"; ObjectID = "cLR-MH-2mC"; */
+"cLR-MH-2mC.segmentTitles[0]" = "Damen";
+
+/* Class = "UISegmentedControl"; cLR-MH-2mC.segmentTitles[1] = "Men"; ObjectID = "cLR-MH-2mC"; */
+"cLR-MH-2mC.segmentTitles[1]" = "Herren";
+
+/* Class = "UILabel"; text = "✓"; ObjectID = "cf9-Ox-gLc"; */
+"cf9-Ox-gLc.text" = "✓";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hKR-l4-cFp"; */
+"hKR-l4-cFp.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hd7-Ue-fgN"; */
+"hd7-Ue-fgN.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "i1c-bU-kCj"; */
+"i1c-bU-kCj.text" = "Label";
+
+/* Class = "UILabel"; text = "Shirt"; ObjectID = "kst-zA-Y05"; */
+"kst-zA-Y05.text" = "Shirt";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "lRp-hv-qZ9"; */
+"lRp-hv-qZ9.text" = "Label";
+
+/* Class = "UILabel"; text = "✓"; ObjectID = "lyA-lY-3rt"; */
+"lyA-lY-3rt.text" = "✓";
+
+/* Class = "UILabel"; text = "‣"; ObjectID = "mCN-nj-Qno"; */
+"mCN-nj-Qno.text" = "‣";
+
+/* Class = "UIButton"; normalTitle = "◀︎ Back"; ObjectID = "muc-gK-QWJ"; */
+"muc-gK-QWJ.normalTitle" = "◀︎ Back";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "nmO-dx-m42"; */
+"nmO-dx-m42.text" = "Label";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "oOE-OW-cfJ"; */
+"oOE-OW-cfJ.text" = "0";
+
+/* Class = "UILabel"; text = "Wishlist"; ObjectID = "pYA-BA-W90"; */
+"pYA-BA-W90.text" = "Wishlist";
+
+/* Class = "UIButton"; normalTitle = "Choose"; ObjectID = "pqn-OG-W4D"; */
+"pqn-OG-W4D.normalTitle" = "Wählen";
+
+/* Class = "UIButton"; normalTitle = "X"; ObjectID = "qVP-wH-NhK"; */
+"qVP-wH-NhK.normalTitle" = "X";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "qaS-vd-pVv"; */
+"qaS-vd-pVv.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "◀︎ Back"; ObjectID = "s6u-R2-QlX"; */
+"s6u-R2-QlX.normalTitle" = "◀︎ Back";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "sMd-KD-uW2"; */
+"sMd-KD-uW2.text" = "Label";
+
+/* Class = "UILabel"; text = "Ups! Sieht so aus, als hättest Du keine Internetverbindung!"; ObjectID = "sR1-z7-hyi"; */
+"sR1-z7-hyi.text" = "Ups! Sieht so aus, als hättest Du keine Internetverbindung!";
+
+/* Class = "UIButton"; normalTitle = "Apply"; ObjectID = "w15-gt-t3t"; */
+"w15-gt-t3t.normalTitle" = "Anwenden";
+
+/* Class = "UITextField"; placeholder = "Tag a keyword and search (e.g. Air Max)"; ObjectID = "xTY-pm-Jgq"; */
+"xTY-pm-Jgq.placeholder" = "Mit Sichwort suchen (z.B. Jeansjacke)";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xUa-jJ-3UY"; */
+"xUa-jJ-3UY.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Wishlist per E-Mail senden"; ObjectID = "y86-Ge-m8e"; */
+"y86-Ge-m8e.normalTitle" = "Wishlist per E-Mail senden";
+
+/* Class = "UIButton"; normalTitle = "Nach allen Marken suchen"; ObjectID = "yKX-31-9Vf"; */
+"yKX-31-9Vf.normalTitle" = "Nach allen Marken suchen";
+
+/* Class = "UIBarButtonItem"; title = "Open in Safari"; ObjectID = "ysc-zy-RRb"; */
+"ysc-zy-RRb.title" = "In Safari öffnen";
+
+/* Class = "UIButton"; normalTitle = "Nochmal versuchen"; ObjectID = "z66-ax-pYZ"; */
+"z66-ax-pYZ.normalTitle" = "Nochmal versuchen";
+
+/* Class = "UIButton"; normalTitle = "◀︎ Back"; ObjectID = "zyq-nm-9j7"; */
+"zyq-nm-9j7.normalTitle" = "◀︎ Back";
+
+/* Class = "UIButton"; normalTitle = "Go to Shop"; ObjectID = "ARq-dG-0Os"; */
+"ARq-dG-0Os.normalTitle" = "Zum Shop";
+
+/* Class = "UILabel"; text = "Available Sizes"; ObjectID = "cC0-Yv-rMz"; */
+"cC0-Yv-rMz.text" = "Verfügbare Größen";
+
+/* Class = "UILabel"; text = "Shipping Time"; ObjectID = "aJK-eI-itR"; */
+"aJK-eI-itR.text" = "Versanddauer";
+
+/* Class = "UILabel"; text = "Shipping Cost"; ObjectID = "BFq-cV-FQ0"; */
+"BFq-cV-FQ0.text" = "Versandkosten";
+
+/* Class = "UILabel"; text = "About this product"; ObjectID = "64O-RU-pTy"; */
+"64O-RU-pTy.text" = "Produktinfo";
+
+/* Class = "UILabel"; text = "Sold by"; ObjectID = "S4X-Gc-4hX"; */
+"S4X-Gc-4hX.text" = "Shop";
+
+/* Class = "UILabel"; text = "Payment methods"; ObjectID = "VvP-Ps-t6M"; */
+"VvP-Ps-t6M.text" = "Zahlungsmöglichkeiten";
+
+/* Class = "UILabel"; text = "Return Policy:"; ObjectID = "GxY-s8-Sor"; */
+"GxY-s8-Sor.text" = "Rückgabe-Richtlinien";

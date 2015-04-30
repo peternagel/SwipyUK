@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Swipy
+
+  Created by Niklas Olsson on 29/04/15.
+  Copyright (c) 2015 niklasolsson. All rights reserved.
+*/
+
+"NSLocationWhenInUseUsageDescription" = "Swipy wants to identify your location to display better offers for you";

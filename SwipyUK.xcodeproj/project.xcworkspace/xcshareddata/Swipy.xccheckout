@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EE73212A-6345-42C4-88D8-B21E743A3A6C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Swipy</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DD970C1FEF6376612B3189410215E95BE69074A3</key>
+		<string>https://bitbucket.org/bscheurich/swipy-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Swipy/Swipy.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DD970C1FEF6376612B3189410215E95BE69074A3</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/bscheurich/swipy-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DD970C1FEF6376612B3189410215E95BE69074A3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DD970C1FEF6376612B3189410215E95BE69074A3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>swipy-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
