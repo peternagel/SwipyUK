@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
         
         
         //----------Adjust SDK--------------
-        var adjustConfig = ADJConfig(appToken:"w7a39bq7sdle", environment:ADJEnvironmentSandbox)
+        var adjustConfig = ADJConfig(appToken:"w7a39bq7sdle", environment:ADJEnvironmentProduction)
         adjustConfig.logLevel = ADJLogLevelVerbose
         Adjust.appDidLaunch(adjustConfig)
         
