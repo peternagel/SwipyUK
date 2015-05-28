@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -2110,17 +2110,17 @@
                                     <action selector="onLike:" destination="Rgt-rA-Xn9" eventType="touchUpInside" id="7JU-q8-noI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khm-ib-T0T" userLabel="info">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khm-ib-T0T" userLabel="shoppingBag">
                                 <rect key="frame" x="275" y="540" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Ij7-Q4-5C7"/>
                                     <constraint firstAttribute="width" constant="50" id="wW6-7F-abm"/>
                                 </constraints>
-                                <state key="normal" image="info_btn">
+                                <state key="normal" image="shoppingbag_btn">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onInfo:" destination="Rgt-rA-Xn9" eventType="touchUpInside" id="HsK-2X-G4N"/>
+                                    <action selector="onShoppingBag:" destination="Rgt-rA-Xn9" eventType="touchUpInside" id="lb6-zd-qJA"/>
                                 </connections>
                             </button>
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csP-E5-8p0" userLabel="Over View">
@@ -2280,11 +2280,11 @@
                         <outlet property="errorBtn" destination="z66-ax-pYZ" id="P4A-jz-gPf"/>
                         <outlet property="errorLbl" destination="sR1-z7-hyi" id="m2f-zN-9vK"/>
                         <outlet property="errorViw" destination="dvX-d3-Ahx" id="OQH-WF-2n0"/>
-                        <outlet property="infoBtn" destination="Khm-ib-T0T" id="kAp-SY-TCg"/>
                         <outlet property="likeBtn" destination="QNb-VB-O73" id="0Th-8p-k3n"/>
                         <outlet property="menuBtn" destination="Ws0-9i-OIt" id="2qU-Kl-lQX"/>
                         <outlet property="overViw" destination="csP-E5-8p0" id="6qo-jT-tS9"/>
                         <outlet property="passBtn" destination="Xuc-1k-ZIX" id="sgt-Eu-01Y"/>
+                        <outlet property="shoppingBagBtn" destination="Khm-ib-T0T" id="erl-me-sAU"/>
                         <outlet property="wishBtn" destination="epw-Hf-hJT" id="Qo2-Qe-m42"/>
                         <outlet property="wishlistCnt" destination="a7l-4A-iBj" id="Cot-Yz-5vi"/>
                     </connections>
@@ -3234,13 +3234,13 @@
         <image name="close_btn" width="16" height="16"/>
         <image name="filter-arrow" width="61" height="64"/>
         <image name="info-arrow" width="68" height="57"/>
-        <image name="info_btn" width="12" height="30"/>
         <image name="like_btn" width="36" height="36"/>
         <image name="logo" width="70" height="30"/>
         <image name="menu_icon" width="38" height="30"/>
         <image name="mobile-note" width="203" height="86"/>
         <image name="pass_btn" width="36" height="36"/>
         <image name="share" width="38" height="53"/>
+        <image name="shoppingbag_btn" width="30" height="30"/>
         <image name="tag_head" width="89" height="150"/>
         <image name="wish_icon" width="30" height="30"/>
         <image name="wishlist-arrow" width="61" height="64"/>

@@ -52,6 +52,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
         // Initialize tracker. Replace with your tracking ID.
         GAI.sharedInstance().trackerWithTrackingId("UA-58002902-2")
         
+        
+        //----------Adjust SDK--------------
+        var adjustConfig = ADJConfig(appToken:"w7a39bq7sdle", environment:ADJEnvironmentSandbox)
+        adjustConfig.logLevel = ADJLogLevelVerbose
+        Adjust.appDidLaunch(adjustConfig)
+        
         return true
     }
     

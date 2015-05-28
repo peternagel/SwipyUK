@@ -31,6 +31,8 @@ class WebViewController: UIViewController, UIWebViewDelegate {
         if let goodInfo = linkData as? SWGood {
             urlLink = goodInfo.link
             Utils.sharedInstance.appendTracking("openLinks", itemId: goodInfo.itemId)
+            
+            Utils.trackAdjustEvent(Utils.adjustEventTokenGotoShop)
         } else if let urlInfo = linkData as? String {
             urlLink = urlInfo
         }

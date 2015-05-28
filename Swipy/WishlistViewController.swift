@@ -49,6 +49,8 @@ class WishlistViewController: GAITrackedViewController, UITableViewDataSource, U
         
         wishlist = Utils.sharedInstance.wishlist
         checkWishlistCount()
+        
+        Utils.trackAdjustEvent(Utils.adjustEventTokenOpenWhishlist)
     }
     
     func checkWishlistCount() {
@@ -97,6 +99,8 @@ class WishlistViewController: GAITrackedViewController, UITableViewDataSource, U
         }
         alert.presentFrom(self.revealViewController(), animated: true) { () -> Void in
         }
+        
+        Utils.trackAdjustEvent(Utils.adjustEventTokenSendWhishlist)
     }
     
     @IBAction func onResetWishlist(sender: AnyObject) {

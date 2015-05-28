@@ -66,6 +66,8 @@ class DetailViewController: GAITrackedViewController, UIScrollViewDelegate {
         super.viewWillAppear(animated)
         
         self.screenName = "Product Detail View"
+        
+        Utils.trackAdjustEvent(Utils.adjustEventTokenOpenProductDetail)
     }
 
     override func didReceiveMemoryWarning() {
@@ -278,6 +280,8 @@ class DetailViewController: GAITrackedViewController, UIScrollViewDelegate {
         }))
         shareSheet.presentFrom(self, animated: true) { () -> Void in
         }
+        
+        Utils.trackAdjustEvent(Utils.adjustEventTokenShareWhatsapp)
     }
     
 }

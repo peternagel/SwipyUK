@@ -14,7 +14,7 @@ class MainViewController: GAITrackedViewController, SWRevealViewControllerDelega
     @IBOutlet weak var wishBtn: UIButton!
     @IBOutlet weak var wishlistCnt: UILabel!
     
-    @IBOutlet weak var infoBtn: UIButton!
+    @IBOutlet weak var shoppingBagBtn: UIButton!
     @IBOutlet weak var passBtn: UIButton!
     @IBOutlet weak var likeBtn: UIButton!
     
@@ -36,11 +36,11 @@ class MainViewController: GAITrackedViewController, SWRevealViewControllerDelega
                 frontCard.addGestureRecognizer(tapDetail)
                 
                 passBtn.hidden = false
-                infoBtn.hidden = false
+                shoppingBagBtn.hidden = false
                 likeBtn.hidden = false
             } else {
                 passBtn.hidden = true
-                infoBtn.hidden = true
+                shoppingBagBtn.hidden = true
                 likeBtn.hidden = true
             }
         }
@@ -81,7 +81,7 @@ class MainViewController: GAITrackedViewController, SWRevealViewControllerDelega
         setupButtons()
         
         self.passBtn.hidden = true
-        self.infoBtn.hidden = true
+        self.shoppingBagBtn.hidden = true
         self.likeBtn.hidden = true
         loadData()
         
@@ -214,10 +214,10 @@ class MainViewController: GAITrackedViewController, SWRevealViewControllerDelega
     }
     
     func setupButtons() {
-        self.infoBtn.layer.cornerRadius = self.infoBtn.frame.size.width / 2.0
-        self.infoBtn.layer.masksToBounds = true
-        self.infoBtn.layer.borderWidth = 1.0
-        self.infoBtn.layer.borderColor = Utils.sharedInstance.SW_PURPLE.CGColor
+        self.shoppingBagBtn.layer.cornerRadius = self.shoppingBagBtn.frame.size.width / 2.0
+        self.shoppingBagBtn.layer.masksToBounds = true
+        self.shoppingBagBtn.layer.borderWidth = 1.0
+        self.shoppingBagBtn.layer.borderColor = Utils.sharedInstance.SW_PURPLE.CGColor
         
         self.passBtn.layer.cornerRadius = self.passBtn.frame.size.width / 2.0
         self.passBtn.layer.masksToBounds = true
@@ -314,6 +314,15 @@ class MainViewController: GAITrackedViewController, SWRevealViewControllerDelega
         }
     }
     
+    @IBAction func onShoppingBag(sender: AnyObject) {
+        if let good = self.currGood as? SWGood {
+            var webCtlr = self.storyboard?.instantiateViewControllerWithIdentifier("WebView") as! WebViewController
+            webCtlr.linkData = self.currGood
+            webCtlr.presentMode = "Modal"
+            self.revealViewController().pushModalViewController(webCtlr)
+        }
+    }
+    
     // MARK: - CardActionOnDetail
     func cardDidLikeOnDetail() {
         if self.frontCard != nil {
@@ -345,8 +354,12 @@ class MainViewController: GAITrackedViewController, SWRevealViewControllerDelega
             }
             
             Utils.sharedInstance.appendTracking("likes", itemId: frontCard.item.itemId)
+            
+            Utils.trackAdjustEvent(Utils.adjustEventTokenLike)
         } else {
             Utils.sharedInstance.appendTracking("dislikes", itemId: frontCard.item.itemId)
+            
+            Utils.trackAdjustEvent(Utils.adjustEventTokenDislike)
         }
         
         self.frontCard = self.belowCard

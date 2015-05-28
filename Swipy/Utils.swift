@@ -38,6 +38,16 @@ class Utils: NSObject, CLLocationManagerDelegate {
     let kLocationLatitude = "LocationLatitudeKey"
     let kLocationLongitude = "LocationLongitudeKey"
     
+    static let adjustEventTokenLike = "7xbas0"
+    static let adjustEventTokenDislike = "3v6r51"
+    static let adjustEventTokenOpenProductDetail = "beqagi"
+    static let adjustEventTokenGotoShop = "yib1gl"
+    static let adjustEventTokenOpenFilter = "xx8xqw"
+    static let adjustEventTokenOpenWhishlist = "9uzuqe"
+    static let adjustEventTokenSendWhishlist = "6d3i6z"
+    static let adjustEventTokenShareWhatsapp = "92q73q"
+    static let adjustEventTokenApplyFilter = "1qv031"
+    
     var currencyFormatter: NSNumberFormatter!
     
     class var sharedInstance: Utils {
@@ -625,6 +635,11 @@ class Utils: NSObject, CLLocationManagerDelegate {
     
     
     // MARK: - Class Functions
+    
+    class func trackAdjustEvent(token: String!) {
+        var event = ADJEvent(eventToken: token)
+        Adjust.trackEvent(event)
+    }
     
     class func toString(obj: AnyObject!) -> String {
         if obj != nil {

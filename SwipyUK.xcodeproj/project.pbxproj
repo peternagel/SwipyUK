@@ -31,6 +31,8 @@
 		B011034A1AD3124A00F2B211 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B01103491AD3124A00F2B211 /* AdSupport.framework */; };
 		B01C1D9F1AA567B400CD7061 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C1D9E1AA567B400CD7061 /* DetailViewController.swift */; };
 		B01E9B0D1AC1C14100E8C52E /* GloriaHallelujah.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B01E9B0C1AC1C14100E8C52E /* GloriaHallelujah.ttf */; };
+		B035F2C41B16BF0500A7503C /* Adjust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B035F2C31B16BF0500A7503C /* Adjust.framework */; };
+		B035F2C61B16BF0F00A7503C /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B035F2C51B16BF0F00A7503C /* iAd.framework */; };
 		B0383CB81AB6965100CF1F5D /* GenderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0383CB71AB6965100CF1F5D /* GenderTableViewCell.swift */; };
 		B0383CBA1AB6969200CF1F5D /* KeyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0383CB91AB6969200CF1F5D /* KeyTableViewCell.swift */; };
 		B0383CBC1AB6969F00CF1F5D /* KeyInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0383CBB1AB6969F00CF1F5D /* KeyInputTableViewCell.swift */; };
@@ -125,6 +127,8 @@
 		B01103491AD3124A00F2B211 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		B01C1D9E1AA567B400CD7061 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B01E9B0C1AC1C14100E8C52E /* GloriaHallelujah.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GloriaHallelujah.ttf; sourceTree = "<group>"; };
+		B035F2C31B16BF0500A7503C /* Adjust.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Adjust.framework; path = Swipy/Adjust.framework; sourceTree = "<group>"; };
+		B035F2C51B16BF0F00A7503C /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		B0383CB71AB6965100CF1F5D /* GenderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenderTableViewCell.swift; sourceTree = "<group>"; };
 		B0383CB91AB6969200CF1F5D /* KeyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyTableViewCell.swift; sourceTree = "<group>"; };
 		B0383CBB1AB6969F00CF1F5D /* KeyInputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyInputTableViewCell.swift; sourceTree = "<group>"; };
@@ -204,9 +208,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B035F2C61B16BF0F00A7503C /* iAd.framework in Frameworks */,
 				B0397D761AF1211700F2DEA1 /* CoreLocation.framework in Frameworks */,
 				B09BA9221AD58368002AACDE /* libsqlite3.dylib in Frameworks */,
 				B09BA9201AD58358002AACDE /* libz.dylib in Frameworks */,
+				B035F2C41B16BF0500A7503C /* Adjust.framework in Frameworks */,
 				B09BA91E1AD58341002AACDE /* SystemConfiguration.framework in Frameworks */,
 				B09BA91C1AD58328002AACDE /* CoreData.framework in Frameworks */,
 				B011034A1AD3124A00F2B211 /* AdSupport.framework in Frameworks */,
@@ -491,12 +497,14 @@
 		E72669AC0CDBC99A5047D9F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B035F2C31B16BF0500A7503C /* Adjust.framework */,
 				B0397D751AF1211700F2DEA1 /* CoreLocation.framework */,
 				B09BA9211AD58368002AACDE /* libsqlite3.dylib */,
 				B09BA91F1AD58358002AACDE /* libz.dylib */,
 				B09BA91D1AD58341002AACDE /* SystemConfiguration.framework */,
 				B09BA91B1AD58328002AACDE /* CoreData.framework */,
 				B01103491AD3124A00F2B211 /* AdSupport.framework */,
+				B035F2C51B16BF0F00A7503C /* iAd.framework */,
 				B0E61B7A1AD2D3A1004C3157 /* Pushwoosh.framework */,
 				B863B0E4633DF5138DB92C74 /* libPods.a */,
 			);

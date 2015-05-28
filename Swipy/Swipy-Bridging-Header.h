@@ -12,3 +12,4 @@
 #import <AdSupport/AdSupport.h>
 #import <GBDeviceInfo/GBDeviceInfo.h>
 #import "GAI.h"
+#import <Adjust/Adjust.h>

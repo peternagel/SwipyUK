@@ -50,6 +50,8 @@ class MenuViewController: GAITrackedViewController, UITableViewDataSource, UITab
         self.navigationController?.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
         updateFilterCount()
+        
+        Utils.trackAdjustEvent(Utils.adjustEventTokenOpenFilter)
     }
 
     override func didReceiveMemoryWarning() {
@@ -91,7 +93,7 @@ class MenuViewController: GAITrackedViewController, UITableViewDataSource, UITab
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return specialAry.count + 1
+            return specialAry.count// + 1
         } else if section == 1 {
             return 2 + keyAry.count + (keyAry.count < MAX_KEYWORDS ? 1 : 0)
         } else if section == 2 {
@@ -109,9 +111,9 @@ class MenuViewController: GAITrackedViewController, UITableViewDataSource, UITab
             if indexPath.row < specialAry.count {
                 let specialItem = specialAry[indexPath.row] as! [String: AnyObject]
                 cell.config(specialItem, counts: specialCounts)
-            } else {
+            }/* else {
                 cell.titleLbl.text = "Swipaholic Magazine"
-            }
+            }*/
             
             return cell
         } else if indexPath.section == 1 {
@@ -249,12 +251,12 @@ class MenuViewController: GAITrackedViewController, UITableViewDataSource, UITab
                 APIClient.sharedInstance.specialId = specialItem["id"] as! Int
                 APIClient.sharedInstance.shouldRestart = true
                 self.revealViewController().revealToggleAnimated(true)
-            } else {
+            }/* else {
                 var webCtlr = self.storyboard?.instantiateViewControllerWithIdentifier("WebView") as! WebViewController
                 webCtlr.linkData = "http://www.swipaholic.de"
                 webCtlr.presentMode = "Modal"
                 self.revealViewController().pushModalViewController(webCtlr)
-            }
+            }*/
         } else if indexPath.section == 1 {
             if 2 <= indexPath.row && indexPath.row < 2 + keyAry.count {
                 editingKeyIndex = indexPath.row - 2
@@ -364,6 +366,8 @@ class MenuViewController: GAITrackedViewController, UITableViewDataSource, UITab
         filterTbl.reloadSections(NSIndexSet(index: 1), withRowAnimation: .None)
         filterSetting["keywords"] = keyAry
         updateFilterSetting()
+        
+        Utils.trackAdjustEvent(Utils.adjustEventTokenApplyFilter)
     }
     
     @IBAction func onChangeGender(sender: UISegmentedControl) {
@@ -407,6 +411,8 @@ class MenuViewController: GAITrackedViewController, UITableViewDataSource, UITab
             filterTbl.reloadData()
             updateFilterCount()
         }
+        
+        Utils.trackAdjustEvent(Utils.adjustEventTokenApplyFilter)
     }
     
     @IBAction func onNormalSelectItem(sender: UIButton) {
