@@ -591,7 +591,7 @@ class Utils: NSObject, CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
         locationManager.stopUpdatingLocation()
         if (error != nil) {
-            println(error)
+            print(error)
         }
     }
     
@@ -599,7 +599,7 @@ class Utils: NSObject, CLLocationManagerDelegate {
         if let locationAry = locations as? [CLLocation] {
             if let aLocation = locationAry.last {
                 coordinate = aLocation.coordinate
-                println("location: \(coordinate.latitude), \(coordinate.longitude)")
+                print("location: \(coordinate.latitude), \(coordinate.longitude)")
             }
         }
     }

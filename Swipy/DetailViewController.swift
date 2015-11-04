@@ -166,7 +166,7 @@ class DetailViewController: GAITrackedViewController, UIScrollViewDelegate {
             }
         }
         
-        // println(self.view.bounds)
+        // print(self.view.bounds)
         var itemFrame = imageScrollViw.bounds
         itemFrame.origin = CGPointZero
         for imageLink in currGood.images {

@@ -13,3 +13,5 @@
 #import <GBDeviceInfo/GBDeviceInfo.h>
 #import "GAI.h"
 #import <Adjust/Adjust.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>

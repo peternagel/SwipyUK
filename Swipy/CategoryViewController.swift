@@ -44,7 +44,7 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
         // Utils.sharedInstance.showHUD(self.view)
         APIClient.sharedInstance.getCategory({ (categoryInfo: [String : AnyObject]) -> Void in
             self.categoryAry[0]["amount"] = categoryInfo["allCategories"] as! Int
-            self.categoryAry.extend(categoryInfo["categories"] as! [[String: AnyObject]])
+            self.categoryAry.appendContentsOf(categoryInfo["categories"] as! [[String: AnyObject]])
             self.categoryTbl.reloadData()
             self.selectInitialCategory()
             // Utils.sharedInstance.hideHUD()
@@ -77,7 +77,7 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBAction func onApply(sender: AnyObject) {
         if delegate != nil {
-            if let selectedCategory = categoryTbl.indexPathForSelectedRow() {
+            if let selectedCategory = categoryTbl.indexPathForSelectedRow! {
                 let categoryItem = categoryAry[selectedCategory.row]
                 delegate.categoryDidSelect(categoryItem, subCategory: subCategoryAry)
             }
@@ -130,10 +130,10 @@ class CategoryViewController: UIViewController, UITableViewDataSource, UITableVi
     
     // MARK: - SubCategorySelectDelegate
     func subCategorysDidSelect(subCategorys: [[String : AnyObject]]!) {
-        // println("sub category selected: " + subCategorys.description)
+        // print("sub category selected: " + subCategorys.description)
         subCategoryAry = subCategorys
         if delegate != nil {
-            let selectedCategory = categoryTbl.indexPathForSelectedRow()!
+            let selectedCategory = categoryTbl.indexPathForSelectedRow!
             let categoryItem = categoryAry[selectedCategory.row]
             delegate.categoryDidSelect(categoryItem, subCategory: subCategoryAry)
         }

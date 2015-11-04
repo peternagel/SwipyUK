@@ -16,6 +16,7 @@ public enum BPCompatibleAlertControllerStyle {
     case Alert
 }
 
+@available(iOS 8.0, *)
 @objc(BPCompatibleAlertController)
 public class BPCompatibleAlertController : NSObject, UIAlertViewDelegate {
     let title: String?
@@ -192,7 +193,7 @@ public class BPCompatibleAlertController : NSObject, UIAlertViewDelegate {
     Used to handle iOS 7 UIAlertView delegate calls. Do not use.
     */
     public func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
-        let action = actions[alertView.buttonTitleAtIndex(buttonIndex)] as BPCompatibleAlertAction!
+        let action = actions[alertView.buttonTitleAtIndex(buttonIndex)!] as BPCompatibleAlertAction!
         if let handler = action.handler {
             handler(action)
         }

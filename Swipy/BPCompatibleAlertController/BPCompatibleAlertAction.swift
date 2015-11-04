@@ -16,7 +16,7 @@ public enum BPCompatibleAlertActionStyle {
 }
 
 @objc(BPCompatibleAlertAction)
-public class BPCompatibleAlertAction {
+public class BPCompatibleAlertAction : NSObject{
     /**
         The title of the Action to be shown in the button.
     */
@@ -40,6 +40,7 @@ public class BPCompatibleAlertAction {
     /**
         The UIAlertActionStyle to be used for the UIAlertController in iOS 8.
     */
+    @available(iOS 8.0, *)
     public var alertActionStyle: UIAlertActionStyle {
         get {
             if self.actionStyle == BPCompatibleAlertActionStyle.Cancel {

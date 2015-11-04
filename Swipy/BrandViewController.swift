@@ -221,11 +221,11 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
         selectAllButton(true)
         selectedBrands = [[String: AnyObject]]()
         
-        let selectedRows = brandTbl.indexPathsForSelectedRows()
+        let selectedRows = brandTbl.indexPathsForSelectedRows!
         if selectedRows == nil {
             return
         }
-        let selectedIndexes = selectedRows as! [NSIndexPath]
+        let selectedIndexes = selectedRows as [NSIndexPath]
         for anItem in selectedIndexes {
             brandTbl.deselectRowAtIndexPath(anItem, animated: true)
         }
@@ -257,7 +257,7 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
-            var cell = tableView.dequeueReusableCellWithIdentifier("TitleCell") as! UITableViewCell
+            var cell = tableView.dequeueReusableCellWithIdentifier("TitleCell") as UITableViewCell!
             cell.textLabel?.textAlignment = .Center
             cell.textLabel?.font = UIFont.boldSystemFontOfSize(17)
             if count(searchingKeyword) > 0 {
@@ -326,7 +326,7 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-        let oldText = textField.text as NSString
+        let oldText = textField.text as NSString!
         let newText = oldText.stringByReplacingCharactersInRange(range, withString: string) as NSString
         newText.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         if newText.length == 0 {

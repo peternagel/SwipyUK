@@ -42,7 +42,7 @@ class RabatteViewController: UIViewController, UITableViewDataSource, UITableVie
         // Utils.sharedInstance.showHUD(self.view)
         APIClient.sharedInstance.getRebate({ (rebateInfo: [String : AnyObject]) -> Void in
             self.rebateAry[0]["amount"] = rebateInfo["allRebates"] as! Int
-            self.rebateAry.extend(rebateInfo["rebates"] as! [[String: AnyObject]])
+            self.rebateAry.appendContentsOf(rebateInfo["rebates"] as! [[String: AnyObject]])
             self.rebateTbl.reloadData()
             self.selectInitialRebate()
             // Utils.sharedInstance.hideHUD()
@@ -72,7 +72,7 @@ class RabatteViewController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBAction func onApply(sender: AnyObject) {
         if delegate != nil {
-            if let selectedRebate = rebateTbl.indexPathForSelectedRow() {
+            if let selectedRebate = rebateTbl.indexPathForSelectedRow! {
                 let rebateItem = rebateAry[selectedRebate.row]
                 delegate.rebateDidSelect(rebateItem)
             }

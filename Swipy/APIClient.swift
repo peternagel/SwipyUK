@@ -10,11 +10,14 @@ import UIKit
 
 class APIClient: NSObject {
     
-    // let SERVER_URL = "http://87.230.85.253/"
-    let SERVER_URL = "http://swipyapp.uk/"
+    let SERVER_URL = "http://87.230.85.253/"
+    // let SERVER_URL = "http://swipyapp.uk/"
     var specialId: Int!
     var shouldRestart = false
     var networkStatus = "Unknown"
+    
+    let CLIENT_ID = "1_3plycv2wphk4kwsg40swcggc08ccw0wc8gksgg4w008owoc8c"
+    let CLIENT_SECRET = "463c85gc43eow80048k4c800c4os4ss4kg8g4kc800w8o08co"
     
     class var sharedInstance: APIClient {
         struct Static {
@@ -55,16 +58,66 @@ class APIClient: NSObject {
         return userInfo
     }
     
+    func oAuthForLogin(params: [String: AnyObject], success: ([String: AnyObject]) -> Void, failure: (NSError!) -> Void) {
+        let manager = AFHTTPRequestOperationManager()
+        let url = SERVER_URL + "oauth/v2/token"
+        var finalParams = params
+        finalParams["client_id"] = CLIENT_ID
+        finalParams["client_secret"] = CLIENT_SECRET
+        finalParams["grant_type"] = "password"
+        
+        print("url: " + url + "(" + finalParams.description + ")")
+        
+        manager.GET(url, parameters: finalParams, success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) -> Void in
+            // print("JSON: " + responseObject.description)
+            
+            let authInfo = responseObject as! [String: AnyObject]
+            success(authInfo)
+            }) { (operation: AFHTTPRequestOperation!, error: NSError!) -> Void in
+                failure(error)
+        }
+    }
+    
+    func loginFromApp(params: [String:String], success: ([String: AnyObject]) -> Void, failure: (NSError!) -> Void) {
+        let manager = AFHTTPRequestOperationManager()
+        let url = SERVER_URL + "v3.0/user/login"
+        print("url: " + url + "(" + params.description + ")")
+        
+        manager.POST(url, parameters: params, success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) -> Void in
+            // print("JSON: " + responseObject.description)
+            
+            let loginInfo = responseObject as! [String: AnyObject]
+            success(loginInfo)
+            }) { (operation: AFHTTPRequestOperation!, error: NSError!) -> Void in
+                failure(error)
+        }
+    }
+    
+    func regiserUserFromApp(params: [String:String], success: ([String: AnyObject]) -> Void, failure: (NSError!) -> Void) {
+        let manager = AFHTTPRequestOperationManager()
+        let url = SERVER_URL + "v3.0/user/register"
+        print("url: " + url + "(" + params.description + ")")
+        
+        manager.POST(url, parameters: params, success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) -> Void in
+            // print("JSON: " + responseObject.description)
+            
+            let registerInfo = responseObject as! [String: AnyObject]
+            success(registerInfo)
+            }) { (operation: AFHTTPRequestOperation!, error: NSError!) -> Void in
+                failure(error)
+        }
+    }
+    
     func getSpecialGoods(success: ([SWItem]) -> Void, failure: (NSError!) -> Void) {
         let manager = AFHTTPRequestOperationManager()
         let url = SERVER_URL + "specials"
         var params: [String: AnyObject] = ["id": specialId]
         params["user"] = getUserInfo()
-        println("url: " + url + "(" + params.description + ")")
+        print("url: " + url + "(" + params.description + ")")
         
         manager.POST(url, parameters: params,
             success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) -> Void in
-                // println("JSON: " + responseObject.description)
+                // print("JSON: " + responseObject.description)
                 
                 var goodAry = [SWItem]()
                 for goodItem in responseObject as! [AnyObject] {
@@ -211,11 +264,11 @@ class APIClient: NSObject {
         let manager = AFHTTPRequestOperationManager()
         let url = SERVER_URL + "offers/v2.0"
         var params = getFilterParams(nil)
-        println("url: " + url + "(" + params.description + ")")
+        print("url: " + url + "(" + params.description + ")")
         
         manager.POST(url, parameters: params,
             success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) -> Void in
-                // println("JSON: " + responseObject.description)
+                // print("JSON: " + responseObject.description)
                 
                 var goodAry = [SWItem]()
                 for goodItem in responseObject as! [AnyObject] {
@@ -238,7 +291,7 @@ class APIClient: NSObject {
         let url = SERVER_URL + "filter"
         manager.POST(url, parameters: nil,
             success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) -> Void in
-                // println("JSON: " + responseObject.description)
+                // print("JSON: " + responseObject.description)
                 
                 let filterInfo = responseObject as! [String: AnyObject]
                 success(filterInfo)
@@ -252,11 +305,11 @@ class APIClient: NSObject {
         let manager = AFHTTPRequestOperationManager()
         let url = SERVER_URL + "filter/categories/v1.0"
         let params = getFilterParams(["mainCategory", "subCategories"])
-        println("url: " + url + "(" + params.description + ")")
+        print("url: " + url + "(" + params.description + ")")
         
         manager.POST(url, parameters: params,
             success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) -> Void in
-                // println("JSON: " + responseObject.description)
+                // print("JSON: " + responseObject.description)
                 
                 let filterInfo = responseObject as! [String: AnyObject]
                 success(filterInfo)
@@ -271,10 +324,10 @@ class APIClient: NSObject {
         let url = SERVER_URL + "filter/subcategories/v1.0"
         var params = getFilterParams(["mainCategory", "subCategories"])
         params["mainCategory"] = mainCategoryId
-        println("url: " + url + "(" + params.description + ")")
+        print("url: " + url + "(" + params.description + ")")
         
         manager.POST(url, parameters: params, success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) -> Void in
-            // println("JSON: " + responseObject.description)
+            // print("JSON: " + responseObject.description)
             
             let filterInfo = responseObject as! [String: AnyObject]
             success(filterInfo)
@@ -287,11 +340,11 @@ class APIClient: NSObject {
         let manager = AFHTTPRequestOperationManager()
         let url = SERVER_URL + "filter/sizes/v1.0"
         let params = getFilterParams(["sizes"])
-        println("url: " + url + "(" + params.description + ")")
+        print("url: " + url + "(" + params.description + ")")
         
         manager.POST(url, parameters: params,
             success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) -> Void in
-                // println("JSON: " + responseObject.description)
+                // print("JSON: " + responseObject.description)
                 
                 let filterInfo = responseObject as! [String: AnyObject]
                 success(filterInfo)
@@ -305,11 +358,11 @@ class APIClient: NSObject {
         let manager = AFHTTPRequestOperationManager()
         let url = SERVER_URL + "filter/rebates/v1.0"
         let params = getFilterParams(["rebate"])
-        println("url: " + url + "(" + params.description + ")")
+        print("url: " + url + "(" + params.description + ")")
         
         manager.POST(url, parameters: params,
             success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) -> Void in
-                // println("JSON: " + responseObject.description)
+                // print("JSON: " + responseObject.description)
                 
                 let filterInfo = responseObject as! [String: AnyObject]
                 success(filterInfo)
@@ -323,11 +376,11 @@ class APIClient: NSObject {
         let manager = AFHTTPRequestOperationManager()
         let url = SERVER_URL + "filter/prices/v1.0"
         let params = getFilterParams(["min", "max"])
-        println("url: " + url + "(" + params.description + ")")
+        print("url: " + url + "(" + params.description + ")")
         
         manager.POST(url, parameters: params,
             success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) -> Void in
-                // println("JSON: " + responseObject.description)
+                // print("JSON: " + responseObject.description)
                 
                 let filterInfo = responseObject as! [String: AnyObject]
                 success(filterInfo)
@@ -341,11 +394,11 @@ class APIClient: NSObject {
         let manager = AFHTTPRequestOperationManager()
         let url = SERVER_URL + "filter/colors/v1.0"
         let params = getFilterParams(["colors"])
-        println("url: " + url + "(" + params.description + ")")
+        print("url: " + url + "(" + params.description + ")")
         
         manager.POST(url, parameters: params,
             success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) -> Void in
-                // println("JSON: " + responseObject.description)
+                // print("JSON: " + responseObject.description)
                 
                 let filterInfo = responseObject as! [String: AnyObject]
                 success(filterInfo)
@@ -359,11 +412,11 @@ class APIClient: NSObject {
         let manager = AFHTTPRequestOperationManager()
         let url = SERVER_URL + "filter/brands/v1.0"
         let params = getFilterParams(["brands"])
-        println("url: " + url + "(" + params.description + ")")
+        print("url: " + url + "(" + params.description + ")")
         
         manager.POST(url, parameters: params,
             success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) -> Void in
-                // println("JSON: " + responseObject.description)
+                // print("JSON: " + responseObject.description)
                 
                 let filterInfo = responseObject as! [String: AnyObject]
                 success(filterInfo)
@@ -377,11 +430,11 @@ class APIClient: NSObject {
         let manager = AFHTTPRequestOperationManager()
         let url = SERVER_URL + "filter/shops/v1.0"
         let params = getFilterParams(["shops"])
-        println("url: " + url + "(" + params.description + ")")
+        print("url: " + url + "(" + params.description + ")")
         
         manager.POST(url, parameters: params,
             success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) -> Void in
-                // println("JSON: " + responseObject.description)
+                // print("JSON: " + responseObject.description)
                 
                 let filterInfo = responseObject as! [String: AnyObject]
                 success(filterInfo)
@@ -395,11 +448,11 @@ class APIClient: NSObject {
         let manager = AFHTTPRequestOperationManager()
         let url = SERVER_URL + "filter/v1.0"
         let params = getFilterParams(nil)
-        println("url: " + url + "(" + params.description + ")")
+        print("url: " + url + "(" + params.description + ")")
         
         manager.POST(url, parameters: params,
             success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) -> Void in
-                println("JSON: " + responseObject.description)
+                print("JSON: " + responseObject.description)
                 
                 let filterInfo = responseObject as! [String: AnyObject]
                 success(filterInfo)
@@ -416,14 +469,14 @@ class APIClient: NSObject {
         let wishlist = Utils.sharedInstance.getWishlistParameters()
         let userInfo = getUserInfo()
         let params = ["email": email, "wishlist": wishlist, "user": userInfo]
-        println("url: " + url + "(" + params.description + ")")
+        print("url: " + url + "(" + params.description + ")")
         
         manager.POST(url, parameters: params,
             success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) -> Void in
                 success()
             },
             failure: { (operation: AFHTTPRequestOperation!, error: NSError!) -> Void in
-                println("fail: " + error.description)
+                print("fail: " + error.description)
                 failure(error)
         })
     }
@@ -431,11 +484,11 @@ class APIClient: NSObject {
     func getGoodForId(id: String, success: (SWGood!) -> Void, failure: (NSError!) -> Void) {
         let manager = AFHTTPRequestOperationManager()
         let url = SERVER_URL + "angebote/" + id
-        println("url: " + url + "(nil)")
+        print("url: " + url + "(nil)")
         
         manager.POST(url, parameters: nil,
             success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) -> Void in
-                // println("JSON: " + responseObject.description)
+                // print("JSON: " + responseObject.description)
                 let item = SWGood(response: responseObject)
                 success(item)
             },
@@ -451,14 +504,14 @@ class APIClient: NSObject {
         // params["id"] = ASIdentifierManager.sharedManager().advertisingIdentifier.UUIDString
         let userStore = NSUserDefaults.standardUserDefaults()
         params["id"] = userStore.objectForKey("ApplicationUniqueIdentifier")
-        println("url: " + url + "(" + params.description + ")")
+        print("url: " + url + "(" + params.description + ")")
         
         manager.POST(url, parameters: params,
             success: { (operation: AFHTTPRequestOperation!, responseObject: AnyObject!) -> Void in
                 success()
             },
             failure: { (operation: AFHTTPRequestOperation!, error: NSError!) -> Void in
-                println("fail: " + error.description)
+                print("fail: " + error.description)
                 failure(error)
         })
     }

@@ -58,7 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
         adjustConfig.logLevel = ADJLogLevelVerbose
         Adjust.appDidLaunch(adjustConfig)
         
-        return true
+        return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
     
     // system push notification registration success callback, delegate to pushManager
@@ -94,6 +94,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
         updateFilter()
+        
+        FBSDKAppEvents.activateApp()
     }
 
     func applicationWillTerminate(application: UIApplication) {
@@ -103,7 +105,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
         Utils.sharedInstance.handleUrl(url)
         
-        return true
+        return FBSDKApplicationDelegate.sharedInstance().application(
+            application,
+            openURL: url,
+            sourceApplication: sourceApplication,
+            annotation: annotation)
     }
     
     func updateFilter() {
@@ -125,7 +131,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PushNotificationDelegate 
                 userStore.setDouble(nowVal, forKey: "lastUpdateKey")
                 userStore.synchronize()
             }, failure: { (error: NSError!) -> Void in
-                println("Error: " + error.localizedDescription)
+                print("Error: " + error.localizedDescription)
         })
     }
     

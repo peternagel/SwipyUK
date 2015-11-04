@@ -87,7 +87,7 @@ class ColorViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     @IBAction func onApply(sender: AnyObject) {
         if delegate != nil {
-            if let selectedIndexes = colorCollect.indexPathsForSelectedItems() as? [NSIndexPath] {
+            if let selectedIndexes = colorCollect.indexPathsForSelectedItems() as [NSIndexPath]! {
                 var selectedItems = [[String: AnyObject]]()
                 for aColor in selectedIndexes {
                     selectedItems.append(colorAry[aColor.item])
@@ -123,7 +123,7 @@ class ColorViewController: UIViewController, UICollectionViewDataSource, UIColle
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let selectedIndexes = collectionView.indexPathsForSelectedItems() as! [NSIndexPath]
+        let selectedIndexes = collectionView.indexPathsForSelectedItems() as [NSIndexPath]!
         if indexPath.item == 0 {
             for anIndex in selectedIndexes {
                 if anIndex.item > 0 {
@@ -141,7 +141,7 @@ class ColorViewController: UIViewController, UICollectionViewDataSource, UIColle
     }
     
     func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        let selectedIndexes = collectionView.indexPathsForSelectedItems() as! [NSIndexPath]
+        let selectedIndexes = collectionView.indexPathsForSelectedItems() as [NSIndexPath]!
         let cell = collectionView.cellForItemAtIndexPath(indexPath) as! ColorCollectionViewCell
         if contains(selectedIndexes, indexPath) {
             collectionView.deselectItemAtIndexPath(indexPath, animated: true)

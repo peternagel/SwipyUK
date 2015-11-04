@@ -265,7 +265,7 @@ class MainViewController: GAITrackedViewController, SWRevealViewControllerDelega
                 })
                 
             }, failure:{ (error: NSError!) -> Void in
-                println("Error: " + error.localizedDescription)
+                print("Error: " + error.localizedDescription)
                 dispatch_async(dispatch_get_main_queue(), { () -> Void in
                     Utils.sharedInstance.hideHUD()
                     
@@ -343,7 +343,7 @@ class MainViewController: GAITrackedViewController, SWRevealViewControllerDelega
 
     // MARK: - MDCSwipeToChooseDelegate
     func viewDidCancelSwipe(view: UIView!) {
-        println("You couldn't decide")
+        print("You couldn't decide")
     }
     
     func view(view: UIView!, wasChosenWithDirection direction: MDCSwipeDirection) {

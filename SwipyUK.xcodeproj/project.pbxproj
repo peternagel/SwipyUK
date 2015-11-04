@@ -80,6 +80,23 @@
 		B0F83F861ABD6E87004BB8F3 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F83F851ABD6E87004BB8F3 /* ShopViewController.swift */; };
 		B0F83F881ABD6EC8004BB8F3 /* ShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F83F871ABD6EC8004BB8F3 /* ShopTableViewCell.swift */; };
 		B7B9B13B25ABCF17667CAFF6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B863B0E4633DF5138DB92C74 /* libPods.a */; };
+		FAF2F24C1BA7248900CEF867 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF2F24A1BA7248900CEF867 /* FBSDKCoreKit.framework */; };
+		FAF2F24D1BA7248A00CEF867 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF2F24B1BA7248900CEF867 /* FBSDKLoginKit.framework */; };
+		FAF2F24F1BA72CD500CEF867 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F24E1BA72CD500CEF867 /* SplashViewController.swift */; };
+		FAF2F2511BA72CF100CEF867 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F2501BA72CF100CEF867 /* LoginViewController.swift */; };
+		FAF2F2531BA72D4400CEF867 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F2521BA72D4400CEF867 /* RegisterViewController.swift */; };
+		FAF2F2551BA72D5F00CEF867 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF2F2541BA72D5E00CEF867 /* ResetPasswordViewController.swift */; };
+		FAF2F36E1BB4756100CEF867 /* JosefinSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAF2F3641BB4756100CEF867 /* JosefinSlab-Bold.ttf */; };
+		FAF2F36F1BB4756100CEF867 /* JosefinSlab-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAF2F3651BB4756100CEF867 /* JosefinSlab-BoldItalic.ttf */; };
+		FAF2F3701BB4756100CEF867 /* JosefinSlab-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAF2F3661BB4756100CEF867 /* JosefinSlab-Italic.ttf */; };
+		FAF2F3711BB4756100CEF867 /* JosefinSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAF2F3671BB4756100CEF867 /* JosefinSlab-Light.ttf */; };
+		FAF2F3721BB4756100CEF867 /* JosefinSlab-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAF2F3681BB4756100CEF867 /* JosefinSlab-LightItalic.ttf */; };
+		FAF2F3731BB4756100CEF867 /* JosefinSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAF2F3691BB4756100CEF867 /* JosefinSlab-Regular.ttf */; };
+		FAF2F3741BB4756100CEF867 /* JosefinSlab-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAF2F36A1BB4756100CEF867 /* JosefinSlab-SemiBold.ttf */; };
+		FAF2F3751BB4756100CEF867 /* JosefinSlab-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAF2F36B1BB4756100CEF867 /* JosefinSlab-SemiBoldItalic.ttf */; };
+		FAF2F3761BB4756100CEF867 /* JosefinSlab-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAF2F36C1BB4756100CEF867 /* JosefinSlab-Thin.ttf */; };
+		FAF2F3771BB4756100CEF867 /* JosefinSlab-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAF2F36D1BB4756100CEF867 /* JosefinSlab-ThinItalic.ttf */; };
+		FAF2F3791BB49C4E00CEF867 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FAF2F3781BB49C4E00CEF867 /* video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,6 +218,23 @@
 		B0F83F851ABD6E87004BB8F3 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		B0F83F871ABD6EC8004BB8F3 /* ShopTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopTableViewCell.swift; sourceTree = "<group>"; };
 		B863B0E4633DF5138DB92C74 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF2F24A1BA7248900CEF867 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = Facebook/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		FAF2F24B1BA7248900CEF867 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = Facebook/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		FAF2F24E1BA72CD500CEF867 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		FAF2F2501BA72CF100CEF867 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FAF2F2521BA72D4400CEF867 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FAF2F2541BA72D5E00CEF867 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		FAF2F3641BB4756100CEF867 /* JosefinSlab-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSlab-Bold.ttf"; path = "Fonts/JosefinSlab-Bold.ttf"; sourceTree = "<group>"; };
+		FAF2F3651BB4756100CEF867 /* JosefinSlab-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSlab-BoldItalic.ttf"; path = "Fonts/JosefinSlab-BoldItalic.ttf"; sourceTree = "<group>"; };
+		FAF2F3661BB4756100CEF867 /* JosefinSlab-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSlab-Italic.ttf"; path = "Fonts/JosefinSlab-Italic.ttf"; sourceTree = "<group>"; };
+		FAF2F3671BB4756100CEF867 /* JosefinSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSlab-Light.ttf"; path = "Fonts/JosefinSlab-Light.ttf"; sourceTree = "<group>"; };
+		FAF2F3681BB4756100CEF867 /* JosefinSlab-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSlab-LightItalic.ttf"; path = "Fonts/JosefinSlab-LightItalic.ttf"; sourceTree = "<group>"; };
+		FAF2F3691BB4756100CEF867 /* JosefinSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSlab-Regular.ttf"; path = "Fonts/JosefinSlab-Regular.ttf"; sourceTree = "<group>"; };
+		FAF2F36A1BB4756100CEF867 /* JosefinSlab-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSlab-SemiBold.ttf"; path = "Fonts/JosefinSlab-SemiBold.ttf"; sourceTree = "<group>"; };
+		FAF2F36B1BB4756100CEF867 /* JosefinSlab-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSlab-SemiBoldItalic.ttf"; path = "Fonts/JosefinSlab-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		FAF2F36C1BB4756100CEF867 /* JosefinSlab-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSlab-Thin.ttf"; path = "Fonts/JosefinSlab-Thin.ttf"; sourceTree = "<group>"; };
+		FAF2F36D1BB4756100CEF867 /* JosefinSlab-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "JosefinSlab-ThinItalic.ttf"; path = "Fonts/JosefinSlab-ThinItalic.ttf"; sourceTree = "<group>"; };
+		FAF2F3781BB49C4E00CEF867 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,11 +243,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B035F2C61B16BF0F00A7503C /* iAd.framework in Frameworks */,
+				FAF2F24C1BA7248900CEF867 /* FBSDKCoreKit.framework in Frameworks */,
 				B0397D761AF1211700F2DEA1 /* CoreLocation.framework in Frameworks */,
 				B09BA9221AD58368002AACDE /* libsqlite3.dylib in Frameworks */,
 				B09BA9201AD58358002AACDE /* libz.dylib in Frameworks */,
 				B035F2C41B16BF0500A7503C /* Adjust.framework in Frameworks */,
 				B09BA91E1AD58341002AACDE /* SystemConfiguration.framework in Frameworks */,
+				FAF2F24D1BA7248A00CEF867 /* FBSDKLoginKit.framework in Frameworks */,
 				B09BA91C1AD58328002AACDE /* CoreData.framework in Frameworks */,
 				B011034A1AD3124A00F2B211 /* AdSupport.framework in Frameworks */,
 				B0E61B7B1AD2D3A1004C3157 /* Pushwoosh.framework in Frameworks */,
@@ -265,6 +301,10 @@
 			isa = PBXGroup;
 			children = (
 				B003D06F1A9C03150092A97B /* AppDelegate.swift */,
+				FAF2F24E1BA72CD500CEF867 /* SplashViewController.swift */,
+				FAF2F2501BA72CF100CEF867 /* LoginViewController.swift */,
+				FAF2F2521BA72D4400CEF867 /* RegisterViewController.swift */,
+				FAF2F2541BA72D5E00CEF867 /* ResetPasswordViewController.swift */,
 				B0499ED21AC1AC41006F65BF /* FilterNavigationViewController.swift */,
 				B003D0991A9CF1B90092A97B /* MenuViewController.swift */,
 				B0E517C71AC1C937008EC550 /* MainViewController.swift */,
@@ -290,7 +330,8 @@
 				B0E517C91AC1C9B3008EC550 /* Main.storyboard */,
 				B003D0761A9C03150092A97B /* Images.xcassets */,
 				B003D09E1A9CF99A0092A97B /* Swipy-Bridging-Header.h */,
-				B01E9B0C1AC1C14100E8C52E /* GloriaHallelujah.ttf */,
+				FAF2F3781BB49C4E00CEF867 /* video.mp4 */,
+				FAF2F3631BB4752E00CEF867 /* Fonts */,
 				B09BA90E1AD5792A002AACDE /* GoogleAnalytics */,
 				B0085E2C1ACC48DD00FE24A9 /* BPCompatibleAlertController */,
 				B0F566961AC09CEB00F3468A /* FontAwesome.swift */,
@@ -497,6 +538,8 @@
 		E72669AC0CDBC99A5047D9F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FAF2F24A1BA7248900CEF867 /* FBSDKCoreKit.framework */,
+				FAF2F24B1BA7248900CEF867 /* FBSDKLoginKit.framework */,
 				B035F2C31B16BF0500A7503C /* Adjust.framework */,
 				B0397D751AF1211700F2DEA1 /* CoreLocation.framework */,
 				B09BA9211AD58368002AACDE /* libsqlite3.dylib */,
@@ -509,6 +552,24 @@
 				B863B0E4633DF5138DB92C74 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAF2F3631BB4752E00CEF867 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FAF2F3641BB4756100CEF867 /* JosefinSlab-Bold.ttf */,
+				FAF2F3651BB4756100CEF867 /* JosefinSlab-BoldItalic.ttf */,
+				FAF2F3661BB4756100CEF867 /* JosefinSlab-Italic.ttf */,
+				FAF2F3671BB4756100CEF867 /* JosefinSlab-Light.ttf */,
+				FAF2F3681BB4756100CEF867 /* JosefinSlab-LightItalic.ttf */,
+				FAF2F3691BB4756100CEF867 /* JosefinSlab-Regular.ttf */,
+				FAF2F36A1BB4756100CEF867 /* JosefinSlab-SemiBold.ttf */,
+				FAF2F36B1BB4756100CEF867 /* JosefinSlab-SemiBoldItalic.ttf */,
+				FAF2F36C1BB4756100CEF867 /* JosefinSlab-Thin.ttf */,
+				FAF2F36D1BB4756100CEF867 /* JosefinSlab-ThinItalic.ttf */,
+				B01E9B0C1AC1C14100E8C52E /* GloriaHallelujah.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -557,6 +618,7 @@
 		B003D0621A9C03140092A97B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = niklasolsson;
 				TargetAttributes = {
@@ -595,12 +657,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF2F3761BB4756100CEF867 /* JosefinSlab-Thin.ttf in Resources */,
+				FAF2F3741BB4756100CEF867 /* JosefinSlab-SemiBold.ttf in Resources */,
+				FAF2F3701BB4756100CEF867 /* JosefinSlab-Italic.ttf in Resources */,
+				FAF2F3791BB49C4E00CEF867 /* video.mp4 in Resources */,
 				B001872A1AD6ED06007ABCF3 /* Localizable.strings in Resources */,
+				FAF2F3731BB4756100CEF867 /* JosefinSlab-Regular.ttf in Resources */,
 				B0A21E681AF1306900554940 /* InfoPlist.strings in Resources */,
+				FAF2F36F1BB4756100CEF867 /* JosefinSlab-BoldItalic.ttf in Resources */,
+				FAF2F3721BB4756100CEF867 /* JosefinSlab-LightItalic.ttf in Resources */,
 				B01E9B0D1AC1C14100E8C52E /* GloriaHallelujah.ttf in Resources */,
 				B003D0771A9C03150092A97B /* Images.xcassets in Resources */,
+				FAF2F3711BB4756100CEF867 /* JosefinSlab-Light.ttf in Resources */,
+				FAF2F3751BB4756100CEF867 /* JosefinSlab-SemiBoldItalic.ttf in Resources */,
+				FAF2F3771BB4756100CEF867 /* JosefinSlab-ThinItalic.ttf in Resources */,
 				B0F566991AC09CEB00F3468A /* FontAwesome.otf in Resources */,
 				B0E517CB1AC1C9B3008EC550 /* Main.storyboard in Resources */,
+				FAF2F36E1BB4756100CEF867 /* JosefinSlab-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,11 +766,13 @@
 				B0BD08471ABB67350080033F /* UIColorExtension.swift in Sources */,
 				B09DDB8C1AA0A2DB0098C3A3 /* SWGood.swift in Sources */,
 				B08E4B0B1ABC7D7B00B8DC28 /* BrandViewController.swift in Sources */,
+				FAF2F2511BA72CF100CEF867 /* LoginViewController.swift in Sources */,
 				B00C804F1ABA845100C64EAB /* RabatteTableViewCell.swift in Sources */,
 				B0D2B3051A9E404A0098447C /* MDCSwipeResult.m in Sources */,
 				B05394D31AB3738D0062E490 /* FilterTableViewCell.swift in Sources */,
 				B0D2B2FE1A9E404A0098447C /* MDCGeometry.m in Sources */,
 				B08E4B0D1ABC7DD900B8DC28 /* BrandTableViewCell.swift in Sources */,
+				FAF2F24F1BA72CD500CEF867 /* SplashViewController.swift in Sources */,
 				B0BE08C51AB9BE2900A7C9B1 /* CategoryViewController.swift in Sources */,
 				B0D2B3021A9E404A0098447C /* MDCSwipeOptions.m in Sources */,
 				B09DDB951AA0B7DD0098C3A3 /* Utils.swift in Sources */,
@@ -706,6 +781,8 @@
 				B0E2D61F1ACAE4AF00DF72E3 /* SizeViewController.swift in Sources */,
 				B09DDB921AA0B28E0098C3A3 /* APIClient.swift in Sources */,
 				B0BE08C71AB9C27F00A7C9B1 /* CategoryTableViewCell.swift in Sources */,
+				FAF2F2551BA72D5F00CEF867 /* ResetPasswordViewController.swift in Sources */,
+				FAF2F2531BA72D4400CEF867 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,8 +923,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Swipy",
+					"$(PROJECT_DIR)/Facebook",
 				);
 				INFOPLIST_FILE = Swipy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -871,8 +950,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Swipy",
+					"$(PROJECT_DIR)/Facebook",
 				);
 				INFOPLIST_FILE = Swipy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

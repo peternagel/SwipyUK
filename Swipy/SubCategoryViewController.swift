@@ -43,7 +43,7 @@ class SubCategoryViewController: UIViewController, UITableViewDataSource, UITabl
         // Utils.sharedInstance.showHUD(self.view)
         let mainId = mainCategory["id"] as! Int
         APIClient.sharedInstance.getSubCategory(mainId, success: { (subCategoryInfo: [String : AnyObject]) -> Void in
-            self.subCategoryAry.extend(subCategoryInfo["subCategories"] as! [[String: AnyObject]])
+            self.subCategoryAry.appendContentsOf(subCategoryInfo["subCategories"] as! [[String: AnyObject]])
             self.subCategoryTbl.reloadData()
             self.selectInitialSubCategory()
             // Utils.sharedInstance.hideHUD()
@@ -116,7 +116,7 @@ class SubCategoryViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let selectedIndexes = tableView.indexPathsForSelectedRows() as! [NSIndexPath]
+        let selectedIndexes = tableView.indexPathsForSelectedRows! as [NSIndexPath]
         if indexPath.row == 0 {
             for anItem in selectedIndexes {
                 if anItem.row != 0 {
@@ -134,8 +134,8 @@ class SubCategoryViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        let selectedIndexes = tableView.indexPathsForSelectedRows()
-        if selectedIndexes == nil || selectedIndexes?.count == 0 {
+        let selectedIndexes = tableView.indexPathsForSelectedRows!
+        if selectedIndexes == nil || selectedIndexes.count == 0 {
             tableView.selectRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), animated: true, scrollPosition: .None)
         }
     }

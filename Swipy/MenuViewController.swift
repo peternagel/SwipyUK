@@ -453,7 +453,7 @@ class MenuViewController: GAITrackedViewController, UITableViewDataSource, UITab
     
     // MARK: - SizeSelectDelegate
     func sizeDidSelect(sizes: [[String : AnyObject]]!) {
-        println("size selected: " + sizes.description)
+        print("size selected: " + sizes.description)
         if sizes == nil {
             filterSetting.removeValueForKey("sizes")
         } else {
@@ -472,7 +472,7 @@ class MenuViewController: GAITrackedViewController, UITableViewDataSource, UITab
     
     // MARK: - RebateSelectDelegate
     func rebateDidSelect(rebate: [String : AnyObject]!) {
-        println("rebate selected: " + rebate.description)
+        print("rebate selected: " + rebate.description)
         if rebate == nil {
             filterSetting.removeValueForKey("rebate")
         } else {
@@ -491,7 +491,7 @@ class MenuViewController: GAITrackedViewController, UITableViewDataSource, UITab
     
     // MARK: - PriceSelectDelegate
     func priceDidSelect(minPrice: Int, maxPrice: Int) {
-        println("price selected: \(minPrice) - \(maxPrice)")
+        print("price selected: \(minPrice) - \(maxPrice)")
         filterSetting["min"] = minPrice
         filterSetting["max"] = maxPrice
         
@@ -502,7 +502,7 @@ class MenuViewController: GAITrackedViewController, UITableViewDataSource, UITab
     
     // MARK: - ColorSelectDelegate
     func colorDidSelect(colors: [[String : AnyObject]]!) {
-        println("color selected: " + colors.description)
+        print("color selected: " + colors.description)
         if colors == nil || colors.count == 0 {
             filterSetting.removeValueForKey("colors")
         } else {
@@ -521,7 +521,7 @@ class MenuViewController: GAITrackedViewController, UITableViewDataSource, UITab
     
     // MARK: - BrandSelectDelegate
     func brandsDidSelect(brands: [[String : AnyObject]]!) {
-        println("brand selected: " + brands.description)
+        print("brand selected: " + brands.description)
         if brands == nil || brands.count == 0 {
             filterSetting.removeValueForKey("brands")
         } else {
@@ -535,7 +535,7 @@ class MenuViewController: GAITrackedViewController, UITableViewDataSource, UITab
     
     // MARK: - ShopSelectDelegate
     func shopsDidSelect(shops: [[String : AnyObject]]!) {
-        println("shop selected: " + shops.description)
+        print("shop selected: " + shops.description)
         if shops == nil || shops.count == 0 {
             filterSetting.removeValueForKey("shops")
         } else {

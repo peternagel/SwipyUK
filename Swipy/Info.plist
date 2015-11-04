@@ -30,7 +30,17 @@
 				<string>swipy</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb1551857091714446</string>
+			</array>
+		</dict>
 	</array>
+	<key>1551857091714446</key>
+	<string>Swipy</string>
+	<key>FacebookDisplayName</key>
+	<string>{Your App Name}</string>
 	<key>CFBundleVersion</key>
 	<string>3</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -40,6 +50,16 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>GloriaHallelujah.ttf</string>
+		<string>JosefinSlab-Bold.ttf</string>
+		<string>JosefinSlab-BoldItalic.ttf</string>
+		<string>JosefinSlab-Italic.ttf</string>
+		<string>JosefinSlab-Light.ttf</string>
+		<string>JosefinSlab-Regular.ttf</string>
+		<string>JosefinSlab-LightItalic.ttf</string>
+		<string>JosefinSlab-SemiBold.ttf</string>
+		<string>JosefinSlab-SemiBoldItalic.ttf</string>
+		<string>JosefinSlab-Thin.ttf</string>
+		<string>JosefinSlab-ThinItalic.ttf</string>
 	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
